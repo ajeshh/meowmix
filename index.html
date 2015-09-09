@@ -15,117 +15,78 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <script type="text/javascript">	
+	/*  Online Name Generators v.1.0 script is  made by Niels Gamborg webmaster at online-generator.com.  
+	*    The script is  free (as in "free speech" and also as in "free beer") in anyway. Use it after you own likings.
+	*    Peace and love. :)
+	*/	
+		function generator(){
+			// Add your own words to the wordlist. Be carefull to obey the showed syntax
+			
+			var wordlist1 = ["Eagle", "Raven", "Tiger", "Great White Shark", "Orca", "Grizzly Bear", "Moose", "Cheetah", "Black Mamba", "Coyote", "Rooster", "Jelly Fish", "Scorpion", "Sting Ray", "Armadillo", "Sea Otter", "Beaver", "Viper", "Buffalo", "Hyena", "Narwhal", "Lemur", "Camel", "Fox", "Crocodile", "Rattlesnake", "Tortoise", "Giraffe", "Walrus", "Octopus", "Platypus", "Pangolin", "Meerkat", "Chameleon", "Falcon", "Tasmanian Devil", "Gorilla", "Chimpanze", "Hammerhead Shark", "Panda Bear", "Penguin", "Cougar", "Hippo", "Stallion", "Porcupine", "Bull", "Mongoose", "Rabbit/Hare", "Seal", "Elephant", "Tarantula", "Hawk", "Peacock", "Sloth", "Dolphin", "Anaconda", "Kangaroo", "Lion"];
+			
+			// Random numbers are made 
+			var randomNumber1 = parseInt(Math.random() * wordlist1.length);
+			var name = wordlist1[randomNumber1];			
+			
+			//alert(name); //Remove first to slashes to alert the name
+			
+			//If there's already a name it is removed  
+			if(document.getElementById("result")){
+				document.getElementById("placeholder").removeChild(document.getElementById("result"));
+			}
+			// A div element is created to show the generated name. The Name is added as a textnode. Textnode is added to the placeholder.
+			var element = document.createElement("div");
+			element.setAttribute("id", "result");
+			element.appendChild(document.createTextNode(name));
+			document.getElementById("placeholder").appendChild(element);
+		}		
+	</script>
+	<style type="text/css">
+		h1, p {text-align: center;}
+		body{font-family: arial, serif;}
+		#wrapper{border-left:1px solid #cccccc;border-right:1px solid #cccccc;margin:0 auto;padding: 0 20px;width: 700px}
+		#generator{background:#FEFCAF;border:1px solid #cccccc;margin:30px 0;font-size:28px;font-weight:bold;padding:50px 0 20px;text-align:center;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+		#generator input{font-size:16px;font-weight:normal;margin-top: 30px}
+		#footer{font-size: 10px; color: #999; margin: 30px 0 0 0;}
+		#footer a{color:#999}
+	</style>
   </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/ajeshh/meowmix">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/ajeshh/meowmix/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/ajeshh/meowmix/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+  <body onload="generator()">
+	<div id="wrapper">
+		
+		<img src="https://scontent-lga1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11836754_10155871517635224_8667169054441743066_n.jpg?oh=5ffc26d39aa6bd62c7462037c19741d6&oe=56A61F3A" alt="Meow Mix" align="center" style="display: block;
+    margin-left: auto;
+    margin-right: auto; width:30%;">
 
-    <div class="wrapper">
+		<h1>Spirit Animal Name Generator</h1>
+		<p>Welcome to Meow Mix. We are now initiating you to our awesome social club</p>
+		
+		
+		
+		<!-- The generator result and button. Change text on the button by changing button value. Be carefull changing ID's in this part -->
+		<div id="generator">
+			<div id="placeholder"><div id="result"></div></div>
+			<input type="button" value="Make name" onclick="generator()">		
+		</div>
+		
+		<!--  Change the text to your needs -->
+		
+		
+		
+		
+		
+		
+		 
+		
+		
+		
+		
+		
+	</div>
 
-      <section>
-        <div id="title">
-          <h1>Meowmix</h1>
-          <p>Spirit Animal Name Generator</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/ajeshh">ajeshh</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+      
 
-        <p></p>
-    
-    Meow Mix Spirit Animal Generator
-
-<pre><code>&lt;!-- The Generator script. You can move the script to an external file for better overview --&gt;
-&lt;script type="text/javascript"&gt; 
-/*  Online Name Generators v.1.0 script is  made by Niels Gamborg webmaster at online-generator.com.  
-*    The script is  free (as in "free speech" and also as in "free beer") in anyway. Use it after you own likings.
-*    Peace and love. :)
-*/  
-    function generator(){
-        // Add your own words to the wordlist. Be carefull to obey the showed syntax
-
-        var wordlist1 = ["Eagle", "Raven", "Tiger", "Great White Shark", "Orca", "Grizzly Bear", "Moose", "Cheetah", "Black Mamba", "Coyote", "Rooster", "Jelly Fish", "Scorpion", "Sting Ray", "Armadillo", "Sea Otter", "Beaver", "Viper", "Buffalo", "Hyena", "Narwhal", "Lemur", "Camel", "Fox", "Crocodile", "Rattlesnake", "Tortoise", "Giraffe", "Walrus", "Octopus", "Platypus", "Pangolin", "Meerkat", "Chameleon", "Falcon", "Tasmanian Devil", "Gorilla", "Chimpanze", "Hammerhead Shark", "Panda Bear", "Penguin", "Cougar", "Hippo", "Stallion", "Porcupine", "Bull", "Mongoose", "Rabbit/Hare", "Seal", "Elephant", "Tarantula", "Hawk", "Peacock", "Sloth", "Dolphin", "Anaconda", "Kangaroo", "Lion"];
-
-        // Random numbers are made 
-        var randomNumber1 = parseInt(Math.random() * wordlist1.length);
-        var name = wordlist1[randomNumber1];            
-
-        //alert(name); //Remove first to slashes to alert the name
-
-        //If there's already a name it is removed  
-        if(document.getElementById("result")){
-            document.getElementById("placeholder").removeChild(document.getElementById("result"));
-        }
-        // A div element is created to show the generated name. The Name is added as a textnode. Textnode is added to the placeholder.
-        var element = document.createElement("div");
-        element.setAttribute("id", "result");
-        element.appendChild(document.createTextNode(name));
-        document.getElementById("placeholder").appendChild(element);
-    }       
-&lt;/script&gt;
-
-
-
-&lt;!-- Stylesheet. Change styles here. You can move the stylesheet to a extern file for better overview --&gt;
-&lt;style type="text/css"&gt;
-    h1, p {text-align: center;}
-    body{font-family: arial, serif;}
-    #wrapper{border-left:1px solid #cccccc;border-right:1px solid #cccccc;margin:0 auto;padding: 0 20px;width: 700px}
-    #generator{background:#FEFCAF;border:1px solid #cccccc;margin:30px 0;font-size:28px;font-weight:bold;padding:50px 0 20px;text-align:center;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
-    #generator input{font-size:16px;font-weight:normal;margin-top: 30px}
-    #footer{font-size: 10px; color: #999; margin: 30px 0 0 0;}
-    #footer a{color:#999}
-&lt;/style&gt;
-</code></pre>
-
-<p>
-</p>
-    <div id="wrapper">
-
-<pre><code>    &lt;img src="https://scontent-lga1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11836754_10155871517635224_8667169054441743066_n.jpg?oh=5ffc26d39aa6bd62c7462037c19741d6&amp;oe=56A61F3A" alt="Meow Mix" align="center" style="display: block;
-margin-left: auto;
-margin-right: auto; width:30%;"&gt;
-
-    &lt;h1&gt;Spirit Animal Name Generator&lt;/h1&gt;
-    &lt;p&gt;Welcome to Meow Mix. We are now initiating you to our awesome social club&lt;/p&gt;
-
-
-
-    &lt;!-- The generator result and button. Change text on the button by changing button value. Be carefull changing ID's in this part --&gt;
-    &lt;div id="generator"&gt;
-        &lt;div id="placeholder"&gt;&lt;div id="result"&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;input type="button" value="Make name" onclick="generator()"&gt;       
-    &lt;/div&gt;
-
-    &lt;!--  Change the text to your needs --&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/div&gt;
-</code></pre>
-
-<p></p>
-</div>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
